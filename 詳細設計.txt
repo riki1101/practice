@@ -1,0 +1,24 @@
+エンドポイントの設定
+* LIST 
+  * /todo
+    * Query{優先度(all, high,...), 状態(all, finish, pending, ...)}
+  * タスク情報の一覧表示
+* POST 
+  * /todo/{todo_id}
+    * RequestBody{タイトル, 優先度, 状態}
+* UPDATE 
+  * /todo/{todo_id}
+    * RequestBody{タイトル, 優先度, 状態}
+
+テーブル設計
+Todo
+* Todo_id
+* Title
+* 優先度
+* 状態
+* カレンダー
+* createAt
+* deleteAt
+
+2024-05-19
+
